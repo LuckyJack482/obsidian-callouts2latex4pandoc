@@ -1,0 +1,18 @@
+verbosity: INFO
+# ${.} is current directory
+data-dir: ${.}/data
+from: gfm+wikilinks_title_after_pipe
+tab-stop: 2
+filters:
+  - ${.}/obsidian_filter.lua
+  - ${.}/bang_wikilink.lua
+
+# Specific writers options (LaTeX)
+standalone: true
+embed-resources: true
+# To be safe, I " " the option
+pdf-engine-opt: "--shell-escape"
+resource-path: [${.}, ${.}/resources]
+to: pdf
+output-file: ${.}/output.pdf
+input-file: ${.}/input.md
