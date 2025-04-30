@@ -38,7 +38,7 @@ I personally use a GNU/Linux operating system, thus I will post only unix like c
 #### LaTeX
 By using Pandoc to generate a PDF documents, you will need a local TeX distribution such as [TeX Live](https://tug.org/texlive/).
 #### Inkscape
-For now, the [Lucide icons](## Icons) are SVG files, thus [Inkscape](https://inkscape.org/) is **required** in order to convert the SVG icons (the conversion is done during LaTeX compilation). Furthermore, you will need to invoke `pandoc` with the `--pdf-engine-opt="--shell-escape"` (for [TeX Live](https://tug.org/texlive/)) to allow LaTeX to do shell escaping. Please take a look at the [`svg` package](https://ctan.org/pkg/svg) [manual (page 3)](http://mirrors.ctan.org/graphics/svg/doc/svg.pdf) for more information on the shell escaping and Inkscape requirement. I am willing to remove the SVG files by statically converting them once, in order to remove all these requirements (referring to Inkscape and shell-escape option requirements).
+For now, the [Lucide icons](https://github.com/LuckyJack482/obsidian-callouts2latex4pandoc?tab=readme-ov-file#icons) are SVG files, thus [Inkscape](https://inkscape.org/) is **required** in order to convert the SVG icons (the conversion is done during LaTeX compilation). Furthermore, you will need to invoke `pandoc` with the `--pdf-engine-opt="--shell-escape"` (for [TeX Live](https://tug.org/texlive/)) to allow LaTeX to do shell escaping. Please take a look at the [`svg` package](https://ctan.org/pkg/svg) [manual (page 3)](http://mirrors.ctan.org/graphics/svg/doc/svg.pdf) for more information on the shell escaping and Inkscape requirement. I am willing to remove the SVG files by statically converting them once, in order to remove all these requirements (referring to Inkscape and shell-escape option requirements).
 ### Icons
 The icons are taken from the [Lucide](https://lucide.dev/), the default icon set used by [Obsidian](https://obsidian.md/). I downloaded the ones I need for my setup in white color (color can be customized in the web page) into the [`lucide_personal`](lucide_personal) directory, appending a `_white` suffix to each one. The downloaded icons are the one used by Obsidian plus some icons used for my custom callouts.
 ### Callouts
@@ -71,9 +71,9 @@ All the color but for yellow are from Obsidian: the yellow color is custom since
 
 ### My custom callouts
 Based on my use of Obsidian (and consequentely [Quartz](https://github.com/jackyzha0/quartz) and [Pandoc](https://pandoc.org/)), I created few custom callouts. Particularly:
-- `IMAGE`, [lucide icon `image`](https://lucide.dev/icons/image), color [blue](## Colors)
-- `GRAPH`, [lucide icon `chart-line`](https://lucide.dev/icons/chart-line), color [cyan](## Colors)
-- `SCHEMATIC`, [lucide icon `circuit-board`](https://lucide.dev/icons/circuit-board), color [yellow](## Colors) (I could change its name to `CIRCUIT` in the future)
+- `IMAGE`, [lucide icon `image`](https://lucide.dev/icons/image), color [blue](https://github.com/LuckyJack482/obsidian-callouts2latex4pandoc?tab=readme-ov-file#colors)
+- `GRAPH`, [lucide icon `chart-line`](https://lucide.dev/icons/chart-line), color [cyan](https://github.com/LuckyJack482/obsidian-callouts2latex4pandoc?tab=readme-ov-file#colors)
+- `SCHEMATIC`, [lucide icon `circuit-board`](https://lucide.dev/icons/circuit-board), color [yellow](https://github.com/LuckyJack482/obsidian-callouts2latex4pandoc?tab=readme-ov-file#colors) (I could change its name to `CIRCUIT` in the future)
 
 ## Bang wikilink filter
 
