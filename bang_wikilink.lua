@@ -1,7 +1,6 @@
 -- bang_wikilink.lua
 --
 -- Thanks ChatGPT
--- But this Does NOT WORK! yuppi
 
 function Para(para)
   local content = para.content
